@@ -1,0 +1,39 @@
+/* mobile view */
+@media only screen and (max-width: 780px) {
+    body {
+        /* background-image: none;
+        background-color: lightblue; */
+        background: linear-gradient( rgb(47, 47, 47) 5%, #ADD8E6 35%, rgb(247, 247, 247) 80%) fixed;
+        
+    }
+    #desktopNav {
+        display: none;
+    }
+
+    #cube {
+/*         padding-left: 10%;
+        padding-right: 10%; */
+        width: 300px;
+        height: 400px;
+        resize: both;
+        overflow: auto;
+        /* border: 1px dashed #aaa; */
+    }
+/*     .iconDesktop {
+        
+    } */
+    
+    #mobileNav{
+        display: flex;
+    }
+
+    #menuIcon {
+        display: flex;
+        float: right;
+        
+      }
+
+      
+}
+
+

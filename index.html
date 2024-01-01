@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+   
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    
+</head>
+<body>
+    <header class="container">
+        <nav id="desktopNav">
+            <div class="left">
+                <a href="">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="">Portfolio</a> |
+                <a href="">Alternative Version</a> | <!--hover words unavaible currently-->
+            </div>
+            
+            <div class="right">
+                <a href="">Cover Letter</a> |
+                <a href="">Contacts</a>
+            </div>
+        </nav>
+    
+        <!-- <nav id="mobileNav"> -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">                      
+                    <a href="">Home</a>
+                    <a href="">about</a>
+                    <a href="">Portfolio</a>
+                    <a href="">smthElse</a>
+                    <a href="">CoverLetter</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+            <span id="menuIcon" onclick="openNav()">&#9776;</span>
+        <!-- </nav> -->
+    </header>
+    
+   
+
+    
+    <main>
+        <div class="iconDesktop">
+            <svg width="500" height="600" id="cube" viewBox="0 0 500 600" >
+                
+                <!-- Define the pattern with the image -->
+                <defs>
+                <pattern id="image" x="0" y="0" width="1" height="1">
+                    <image href="images/scene.jpg" x="0" y="-215" width="500" height="700" />
+                </pattern>
+    
+                <!-- left side -->
+                <pattern id="image2" x="0" y="0" width="1" height="1">
+                    <image href="images/final1.JPG" x="-425" y="-100" width="750" height="600" />
+                </pattern>
+    
+                <!-- right side -->
+                <pattern id="image3" x="0" y="0" width="1" height="1">
+                    <image href="images/build.png" x="-250" y="-100" width="750" height="600" />
+                </pattern>
+                </defs>
+                
+
+
+                        <!-- background color of entire polygon -->
+                <polygon id="iconBackground" points="1,151 249,1 499,151 499,449 249,599 1,449"/>
+                    
+                                <!-- shapes on html -->
+                    <g class="group-hover">
+                        <a href="index.html" title="smth">
+                            <!-- Top side (left clockwise angles)-->
+                            <polygon class="imageSpace" points="000,150 250,000 500,150 250,300" fill="url(#image)" alt="landscape img">
+                                <!-- <title>title, appears when hover under mouse</title> -->
+                            </polygon>                
+                        </a>
+                        <text x="165" y="90">
+                            "Snapshots" <!--more words: album, captured moments, exhibit, collage, visual journey, past memories -->
+                        </text>
+                        <text x="90" y="120" class="sub-text">
+                            <tspan x="155" dy="1.2em">A gallery of selected memories</tspan>
+                            <tspan x="90" dy="1.2em">that marked each step of my photographic maturity.</tspan>
+                        </text>
+                    </g>         
+                    <g class="group-hover">
+                        <a href="index.html" alt="smth">
+                            <!-- left side -->
+                            <polygon class="imageSpace" points="000,150 250,300 250,600 000,450" fill="url(#image2)" alt="keyboard img"/>
+                        </a>
+                        <text x="38" y="260" transform="rotate(28 90 300)">
+                            <!-- transform="rotate(33 180 90)" -->
+                            "Portfolio"  
+                        </text>
+                        <text x="40" y="350" class="sub-text" fill="transparent">
+                            <tspan x="40" dy="1.2em">An assortment of software</tspan>
+                            <tspan x="40" dy="1.2em">projects to showcase my</tspan>
+                            <tspan x="40" dy="1.2em">coding prowess.</tspan>
+                        </text>
+                    </g>
+                    <g class="group-hover">
+                        <a href="index.html">
+                            <!-- Right side -->
+                            <polygon class="imageSpace" points="250,300 500,150 500,450 250,600" fill="url(#image3)" alt="robot img"/>
+                        </a>
+                        <text x="300" y="540" transform="rotate(330 300 500)">
+                            "Projects"  
+                        </text>
+                        <text x="500" y="330" class="sub-text">
+                            <tspan x="270" dy="1.2em">A collection of "personal" projects </tspan>
+                            <tspan x="280" dy="1.2em">each serving as a inspiration</tspan>
+                            <tspan x="300" dy="1.2em">and creative drive</tspan>
+                            
+                        </text>
+                    </g>
+            </svg> 
+        </div>
+        
+        
+        <h1>Wesley Kwong</h1>
+        <div id="notes">
+            <p>
+                Everything here is hard coded in vanilla HTML. <br>
+                This page exclusivly was made without bootstrap or use of frameworks.
+            </p>
+            <p></p>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js" onclick="myFunction()"></script>
+</body>
+</html>

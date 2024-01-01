@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0;
+    border: 0; */
+}
+body {
+    /* background-color: rgb(236, 222, 187); */
+    /* background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(243, 140, 31)); */
+    /* background-image: radial-gradient(white 10%, rgba(255, 166, 0, 0.386) 70%, rgba(128, 128, 128, 0.405) 100%); */
+    background-image: radial-gradient(rgb(247, 247, 247) 5%, #ADD8E6 35%, rgb(47, 47, 47) 80%);
+    
+    margin: auto;
+}
+nav {
+
+    /* background-color: powderblue; */
+    font-size: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: rgb(96, 166, 228);
+    height: 45px;
+    padding: 0.5% 0;
+    gap: 2rem;
+}
+
+nav a {
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+}
+nav a:hover {
+    color: green;
+    text-decoration: underline;
+    outline-color: black;
+    font-size: 105%;
+    text-underline-offset: 1rem;
+}
+/* # to identify a id tag */
+
+div.left {
+    text-align: left;
+    position: absolute;
+    left: 2%;
+    /* border: 1px solid red; */
+}
+
+div.right {
+    float: right;
+    position: relative;
+    right: 2%;
+    /* border: 1px solid red; */
+}
+
+
+
+.iconDesktop {
+    text-align: center;
+    /* background-color: aquamarine; */
+/*     padding-left: 2%;
+    padding-right: 2%;
+     */
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 400%;
+}
+
+polygon {
+    stroke: black;
+    stroke-width: 0.03%;
+}
+
+#notes {
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-content: end;
+    padding-right: 2%;
+}
+
+                    /* icon desktop effects */
+.imageSpace {
+    /* fill: #ADD8E6; */
+}
+
+.imageSpace:hover {
+    fill-opacity: 0.3;
+    /* border: 1px black; */
+}
+.group-hover:hover .imageSpace {
+    fill-opacity: 0.2;
+}
+
+#iconBackground {
+    /* fill: rgba(0, 0, 0, 0.55); */
+    fill: rgba(0, 0, 0, 0.943);
+
+}
+
+text {
+    display: none;
+    fill:#fff;
+    font-size:2em;
+    font-family:sans-serif;
+}
+text.sub-text {
+    display:none;
+    fill:#fff;
+    font-size:0.9em;
+    font-family:sans-serif;
+}
+
+g:hover > text{
+    display:block;
+}
+
+                    /* mobile navigation */
+
+ /* The Overlay (background) */
+ .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #cdcdcd;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  #menuIcon {
+    
+    display: none;
+    font-size: 300%;
+    float: right;
+    padding-top: 1%;
+    padding-right: 0%;
+    /* background-color: rgba(48, 48, 48, 0.3); */
+    width: 50px;
+  }
+  
