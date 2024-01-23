@@ -1,0 +1,159 @@
+  
+        /* about page */
+.content-container {
+    display: grid;
+    padding: 1%;
+}
+#a-title {
+    background-color: rgba(208, 208, 208, 0.3);
+    border-radius: 50px;
+    padding-left: 2%;
+}
+#about-title-left {
+    float: left;
+
+}
+#about-title-right {
+  float: right;
+  padding-right: 3%;
+  
+}
+.grid-container {
+    display: grid;
+    /* background-color: #EAE4D7; */
+    grid-template-columns: 50% 50%;
+    padding: 1%;
+    grid-row: 2;
+}
+
+.g-left {
+    /* background-color: #EAE4D7; */
+    background-image: linear-gradient(rgba(236, 244, 163, 0.495) 0%, #eae4d7 2%, rgba(0, 128, 0, 0.401) 150%);
+    border-radius: 20px;
+    padding: 5%;
+    padding-right: 8%;
+    padding-left: 7%;
+    margin-right: 2%;
+}
+
+.description-title {
+    font-size: 1.6em;
+    font-family: 'Anton', sans-serif;
+    white-space: inherit;
+}
+.description-text {
+  color: #646464;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  /* Tahoma, Verdana, sans-serif; */
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+
+
+                                /* carasel */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 40rem;
+  max-height: 600px; /* Set your desired max height */
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Add this line */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Adjust the size of the images */
+.mySlides img {
+    width: 100%; /* Make the image fill its container width */
+    height: 100%; /* Make the image fill its container height */
+    object-fit: cover; /* Scale the image while maintaining aspect ratio, and cover the entire container */
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-shadow:
+  1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  letter-spacing: 2px;
+}
+
+/* Number text (1/3 etc) not in use*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+

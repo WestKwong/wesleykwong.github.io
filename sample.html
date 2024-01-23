@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Hover with Text</title>
+  <style>
+/*     .st0 {
+  fill: #0491B7;
+}
+.st1 {
+  fill: #0491B7;
+}
+.st1:hover {
+  fill: red;
+  opacity: 0.5;
+}
+.st0:hover {
+  fill: red;
+} */
+
+text{
+  display:none;
+  fill:#fff;
+  font-size:2em;
+  font-family:sans-serif;
+}
+
+text.sub-text{
+  display:none;
+  fill:#fff;
+  font-size:0.8em;
+  font-family:sans-serif;
+}
+
+g:hover > text{
+  display:block;
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="iconDesktop">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1139.833px" height="663.313px" viewBox="0 0 1139.833 663.313" style="enable-background:new 0 0 1139.833 663.313;" xml:space="preserve">
+    <defs>
+      <pattern id="image" x="0" y="0" width="1" height="1">
+          <image href="images/scene.jpg" x="0" y="-215" width="500" height="700" />
+      </pattern>
+
+      <!-- left side -->
+      <pattern id="image2" x="0" y="0" width="1" height="1">
+          <image href="images/final1.JPG" x="-425" y="-100" width="750" height="600" />
+      </pattern>
+
+      <!-- right side -->
+      <pattern id="image3" x="0" y="0" width="1" height="1">
+          <image href="images/build.png" x="-250" y="-100" width="750" height="600" />
+      </pattern>
+      </defs>
+    <g>
+    <polygon class="st0" points="0,0.313 638,0.313 383,347.313 0,347.313 " fill="url(#image)">
+      <title>One</title>
+    </polygon>
+    <text x="10" y="40"> TITLE </text>
+      <text x="10" y="55" class="sub-text">Some Content</text>
+      </g>
+  
+    <polygon class="st1" points="0,353.813 649,353.813 891.5,663.313 0,663.313 ">
+      <title>Two</title>
+    </polygon>
+  
+    <polygon class="st0" points="392.5,347.313 514.75,179.813 645.25,347.313 ">
+      <title>Three</title>
+      <text x="10" y="40">smth</text>
+    </polygon>
+  
+    <polyline class="st0" points="518.875,173.388 644.667,0.501 1139.833,0 1139.75,662.063 897.25,662.063">
+      <title>Four</title>
+    </polyline>
+  </svg>
+</div>
+
+</body>
+</html>

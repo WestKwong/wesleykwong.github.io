@@ -3,8 +3,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    
+
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+
+
 </head>
 <body>
+    <header class="container">
+        <nav id="desktopNav">
+            <div class="left">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="">Portfolio</a> |
+                <a href="">Alternative Version</a> | <!--hover words unavaible currently-->
+            </div>
+            
+            <div class="right">
+                <a href="">Cover Letter</a> |
+                <a href="">Contacts</a>
+            </div>
+        </nav>
+            <!-- <nav id="mobileNav"> -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">                      
+                        <a href="">Home</a>
+                        <a href="about.html">about</a>
+                        <a href="">Portfolio</a>
+                        <a href="">smthElse</a>
+                        <a href="">CoverLetter</a>
+                        <a href="">Contacts</a>
+                    </div>
+                </div>
+                <span id="menuIcon" onclick="openNav()">&#9776;</span>
+            <!-- </nav> -->
+
+    </header>
+    <main>
+        <div class="content-container">
+            <div id="a-title">
+                <h1 id="about-title-left">Wesley Kwong</h1>
+                <h1 id="about-title-right">✧ </h1>
+                
+            </div>
+            
+            <div class="grid-container">
+                <div class="g-left">
+                    <p class="description-title">Am I a good fit?</p>
+                    <p class="description-text">
+                        I'm Software Development Student, currently exploring web development with enthusiasm.
+                        
+                    </p>
+                    <p class="description-text">
+                        currently, I'm enrolled as a student at Mohawk in search of my first Co-op.
+                        Outside of that I take interest in design, embedded systems, and self cultivation.
+                    </p>
+                    <p class="description-text">
+                        I understand that my limited experience poses a chancy endeavoror/ precarious risk.
+                        but I make up for in relentless Commitment to Progress.
+                    </p>
+                    <p class="description-text">
+                        Summary: "Do I blend well with your Code Architects?"    
+                        Do my demeanor and attitude align with your company/team? 
+                    </p>
+                </div>
+                <div><!-- Slideshow container -->
+                    <div class="slideshow-container">
+                    
+                      <!-- Full-width images with number and caption text -->
+                      <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images/intro.jpg" style="width:100%">
+                        <div class="text">"Lead-In Visual"</div>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images/professional.png" style="width:100%">
+                        <div class="text">Formal Photograph</div>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images/personality.png" style="width:100%">
+                        <div class="text">Soulful Photograph</div>
+                      </div>
+                    
+                      <!-- Next and previous buttons -->
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                    </div></div>
+                <div>Current direction: web development</div>  
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>  
+                <div>7</div>
+                <div>8</div>
+            </div>
+        </div>
+        <p>obejective: answer who am i, what my direction is (software devloper), interest (robotics) experiences (only a little) 
+            cencept in executing: tell a story intro me, into what i do, where i want to be.
+            use https://www.anandupender.com/design.html as template
+        </p>
+    </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
